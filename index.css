@@ -14,7 +14,7 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	/* border: 0; */
 	}
 /* remember to define focus styles! */
-:focus {
+.focus {
 	outline: 0;
 	}
 *{
@@ -22,8 +22,9 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
+/* General styles  */
 
 html{
     font-size: 62.5%;
@@ -40,6 +41,8 @@ h1{
 }
 section{
     padding: 4% 0;
+    width: 90%;
+    margin: 0 auto;
 }
 a{
     text-decoration: none;
@@ -58,6 +61,7 @@ nav a{
     border-radius: 10px;
     text-align: center;
     color: white;
+    text-decoration: none;
 }
 .orange{
     background-color: #FF764E;
@@ -75,12 +79,12 @@ nav a{
 }
 /* top section styles  */
 
-.top{
-    position: relative;
-}
 .left, .right{
     display: inline-block;
     text-align: center;
+}
+.top{
+    position: relative;
 }
 .left{
     width: 30%;
@@ -92,31 +96,35 @@ width: 80%;
 .right{
 width: 55%;
 margin-left: 5%;
+text-align: center;
+line-height: 3;
 position: absolute;
-top: 45%;
-}
-.text{
-    width: 80%;
-    margin: 0 auto;
-}
-/* middle text box */
 
-.middle{
-background-color: #DDB9A3;
-color: white;
-}
-span{
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 700;
-}
-.middle-img{
-  
 }
 
-p.middle-img{
-    justify-content: center;
-    align-items: center;
+/* main section*/
+.main{
+    background-color: #DDB9A3;
+    color: white;
+    padding: 2%;
+
 }
-.footer-img{
-   
+
+.info div{
+    width: 30%;
+    margin: 5% auto;
+}
+.bold{
+    font-weight: bold;
+}
+.bg-img{
+    background-image: url('assets/footer_img.jpg');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+}
+footer{
+    background-color: #F9E7DC;
 }
